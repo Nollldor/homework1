@@ -1,30 +1,29 @@
 .message-wrap {
     color: white; /*поправить цвета*/
-    width: 23em;
-    height: 5em;
+    max-width: 25em;
+    min-height: 5em;
     background-color: #A6E500;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 0.2% 1%;
 }
 
 .message-avatar {
+    height: inherit;
     display: flex;
     align-items: end;
-    height: 90%;
     z-index: 10;
 }
 
 .message-avatar-img {
     width: 3.75em;
     height: 3.75em;
+    padding-bottom: 5%;
     border-radius: 50%;
 }
 
 .message-body {
     width: 78%;
-    height: 75%;
     padding: 2% 1%;
     background-color: #002100;
     border-radius: 0.3em;
@@ -40,7 +39,7 @@
     border-right: 10px solid #002100;
     border-bottom: 10px solid #002100;
     right: 99%;
-    top: 73%;
+    bottom: 0%;
 }
 
 .message-body:after {
@@ -51,12 +50,12 @@
     position: absolute;
     background-color: #A6E500;
     right: 100%;
-    top: 62%;
+    bottom: 1%;
 }
 
 .message-body-left {
     width: 80%;
-    padding-left: 5%;
+    padding: 3% 5%;
     margin: auto 0;
 }
 
