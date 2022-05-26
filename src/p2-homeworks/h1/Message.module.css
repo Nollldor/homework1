@@ -1,4 +1,4 @@
-.message-wrap {
+.messageWrap {
     color: white; /*поправить цвета*/
     max-width: 25em;
     min-height: 5em;
@@ -8,21 +8,21 @@
     padding: 0.2% 1%;
 }
 
-.message-avatar {
+.messageAvatar {
     height: inherit;
     display: flex;
     align-items: end;
     z-index: 10;
 }
 
-.message-avatar-img {
+.messageAvatarImg {
     width: 3.75em;
     height: 3.75em;
     padding-bottom: 5%;
     border-radius: 50%;
 }
 
-.message-body {
+.messageBody {
     width: 78%;
     padding: 2% 1%;
     background-color: #002100;
@@ -32,7 +32,7 @@
     position: relative;
 }
 
-.message-body:before {
+.messageBody:before {
     content: "";
     position: absolute;
     border: 10px solid transparent;
@@ -42,7 +42,7 @@
     bottom: 0%;
 }
 
-.message-body:after {
+.messageBody:after {
     content: "";
     width: 27px;
     height: 27px;
@@ -53,27 +53,27 @@
     bottom: 1%;
 }
 
-.message-body-left {
+.messageBodyLeft {
     width: 80%;
     padding: 3% 5%;
     margin: auto 0;
 }
 
-.message-body-right {
+.messageBodyRight {
     width: 20%;
     display: flex;
     justify-content: end;
     align-items: end;
 }
 
-.message-name {
+.messageName {
     color: #9081B4;
 }
 
-.message-text {
+.messageText {
     color: #BFCDBE;
 }
 
-.message-time {
+.messageTime {
     color: #769074;
 }
