@@ -1,3 +1,27 @@
-.someClass {
+.affairs {
+    background-color: #A6E500;
+    width: 400px;
+}
 
+.affair {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.affairName {
+    width: 30%;
+}
+
+.affairPriority {
+    width: 30%;
+}
+
+.affairButton {
+    width: 10%;
+}
+
+.priorityButtons {
+    display: flex;
+    justify-content: center;
 }
