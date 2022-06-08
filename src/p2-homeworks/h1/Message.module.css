@@ -1,6 +1,6 @@
 .messageWrap {
     color: white; /*поправить цвета*/
-    max-width: 25em;
+    width: 25em;
     min-height: 5em;
     background-color: #A6E500;
     display: flex;
@@ -68,10 +68,12 @@
 
 .messageName {
     color: #9081B4;
+    font-weight: bold;
 }
 
 .messageText {
     color: #BFCDBE;
+    word-wrap: break-word;
 }
 
 .messageTime {

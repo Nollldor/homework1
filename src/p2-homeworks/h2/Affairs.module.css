@@ -1,12 +1,14 @@
 .affairs {
     background-color: #A6E500;
-    width: 400px;
+    width: 25em;
+    padding: 0.2% 1%;
 }
 
 .affair {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    word-wrap: break-word;
 }
 
 .affairName {
