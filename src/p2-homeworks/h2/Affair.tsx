@@ -1,6 +1,7 @@
 import React from 'react'
 import {AffairType} from "./HW2";
 import s from "./Affairs.module.css"
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type AffairPropsType = {
     // key не нужно типизировать
@@ -19,7 +20,7 @@ function Affair(props: AffairPropsType) {
 
             <span className={s.affairPriority}>{props.affair.priority}</span>
 
-            <button className={s.affairButton} onClick={deleteCallback}>X</button>
+            <SuperButton className={s.affairButton} onClick={deleteCallback} red={true}>X</SuperButton>
         </div>
     )
 }
