@@ -2,7 +2,7 @@
     color: white; /*поправить цвета*/
     width: 25em;
     min-height: 5em;
-    background-color: #A6E500;
+    background-color: #FFD7A7;
     display: flex;
     justify-content: space-between;
     padding: 0.2% 1%;
@@ -48,7 +48,7 @@
     height: 27px;
     border-radius: 50%;
     position: absolute;
-    background-color: #A6E500;
+    background-color: #FFD7A7;
     right: 100%;
     bottom: 1%;
 }
