@@ -6,22 +6,21 @@
 }
 
 .horizontalMenu {
-    position: absolute;
-    width: 0;
+   /* position: absolute;*/
+    width: 0px;
     display: flex;
     justify-content: space-between;
     white-space: nowrap;
     overflow: hidden;
-    transition: width .7s;
+    transition: width .5s;
 }
 
 .horizontalMenu a {
     flex: 1;
     padding: 1em;
     display: block;
-    color: /* #74924C*/ black;
-    border-left: 1px solid #FFAB51;
-    border-right: 1px solid #FFAB51;
+    color: black;
+
     background: #FFD7A7;
     text-decoration: none;
     transition: .5s linear;
@@ -42,6 +41,12 @@
 
 .activeHorizontalMenu {
     width: 25em;
+
+}
+
+.activeHorizontalMenu a {
+    border-left: 1px solid #FFAB51;
+    border-right: 1px solid #FFAB51;
 }
 
 .hamburger {
@@ -52,6 +57,7 @@
     flex-direction: column;
     justify-content: space-between;
     display: flex;
+    transition: width .5s;
 }
 
 .hamburgerRow {

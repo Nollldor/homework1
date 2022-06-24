@@ -7,10 +7,10 @@ function Header() {
     const [styleHamburger, setStyleHamburger] = useState<string>(styles.hamburger)
     const [styleHorizontalMenu, setStyleHorizontalMenu] = useState<string>(styles.horizontalMenu)
     const hamburgerHandler = () => {
-        styleHorizontalMenu===styles.horizontalMenu?
+        styleHorizontalMenu === styles.horizontalMenu ?
             setStyleHorizontalMenu(`${styles.horizontalMenu} ${styles.activeHorizontalMenu}`)
             : setStyleHorizontalMenu(styles.horizontalMenu)
-        styleHamburger===styles.hamburger?
+        styleHamburger === styles.hamburger ?
             setStyleHamburger(`${styles.hamburger} ${styles.activeHamburger}`)
             : setStyleHamburger(styles.hamburger)
     }
