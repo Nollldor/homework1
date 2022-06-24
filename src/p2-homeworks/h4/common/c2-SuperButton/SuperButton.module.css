@@ -1,7 +1,21 @@
 .default {
+    background: #FFAB51;
+    border-radius: 10px;
+    transition: background-color .5s;
+}
 
+.default:hover {
+    background:green;
+    color: white;
 }
 
 .red {
     background: red;
+    opacity: 0.6;
+    transition: opacity .5s;
+}
+
+.red:hover {
+    background: red;
+    opacity: 1;
 }
