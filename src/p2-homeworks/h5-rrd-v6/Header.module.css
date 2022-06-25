@@ -15,7 +15,7 @@
     transition: width .5s;
 }
 
-.horizontalMenu a {
+.horizontalMenuItem {
     flex: 1;
     padding: 1em;
     display: block;
@@ -26,15 +26,15 @@
     text-align: center;
 }
 
-.horizontalMenu a:nth-child(1) {
+.horizontalMenuItem:nth-child(1) {
     border-left: 0;
 }
 
-.horizontalMenu a:nth-last-child(1) {
+.horizontalMenuItem:nth-last-child(1) {
     border-right: 0;
 }
 
-.horizontalMenu a:hover {
+.horizontalMenuItem:hover {
     background: #FFAB51
 }
 
@@ -43,7 +43,7 @@
 
 }
 
-.activeHorizontalMenu a {
+.activeHorizontalMenu .horizontalMenuItem {
     border-left: 1px solid #FFAB51;
     border-right: 1px solid #FFAB51;
 }
