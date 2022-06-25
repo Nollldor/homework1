@@ -7,7 +7,7 @@ import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 type AffairsPropsType = { // need to fix any
     data: Array<AffairType>
     setFilter: (filter: FilterType) => void
-    deleteAffairCallback: (id:number) => void
+    deleteAffairCallback: (id: number) => void
     filter: FilterType
 }
 
@@ -16,7 +16,7 @@ function Affairs(props: AffairsPropsType) {
         <Affair // should work
             key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
             affair={a}
-            deleteAffairCallback={()=>props.deleteAffairCallback(a._id)}
+            deleteAffairCallback={() => props.deleteAffairCallback(a._id)}
         />
     ))
 
@@ -39,10 +39,14 @@ function Affairs(props: AffairsPropsType) {
             {mappedAffairs}
 
             <div className={s.priorityButtons}>
-                <SuperButton className={s.priorityButtonsItem} disabled={props.filter==="all"} onClick={setAll}>All</SuperButton>
-                <SuperButton className={s.priorityButtonsItem} disabled={props.filter==="high"} onClick={setHigh}>High</SuperButton>
-                <SuperButton className={s.priorityButtonsItem} disabled={props.filter==="middle"} onClick={setMiddle}>Middle</SuperButton>
-                <SuperButton className={s.priorityButtonsItem} disabled={props.filter==="low"} onClick={setLow}>Low</SuperButton>
+                <SuperButton className={s.priorityButtonsItem} disabled={props.filter === "all"}
+                             onClick={setAll}>All</SuperButton>
+                <SuperButton className={s.priorityButtonsItem} disabled={props.filter === "high"}
+                             onClick={setHigh}>High</SuperButton>
+                <SuperButton className={s.priorityButtonsItem} disabled={props.filter === "middle"}
+                             onClick={setMiddle}>Middle</SuperButton>
+                <SuperButton className={s.priorityButtonsItem} disabled={props.filter === "low"}
+                             onClick={setLow}>Low</SuperButton>
             </div>
         </div>
     )

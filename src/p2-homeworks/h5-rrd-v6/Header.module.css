@@ -6,7 +6,7 @@
 }
 
 .horizontalMenu {
-   /* position: absolute;*/
+    /* position: absolute;*/
     width: 0px;
     display: flex;
     justify-content: space-between;
