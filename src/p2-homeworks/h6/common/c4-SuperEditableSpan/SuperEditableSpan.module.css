@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.sESWrapper {
+    height: 1.5em;
+
+}
+
+.sES {
+    margin-left: 4%;
+    position: relative;
+    cursor: pointer;
+
+    transition: all 1s;
+    color: #4f6d7aff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.sES:hover {
+    color: #FFD7A7;
+}
+
+.sES:before {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    background: center / contain no-repeat url('./penEditableSpan.svg');
+    left: -1.3em;
+    animation-duration: 1s;
+    animation-name: changerotate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes changerotate {
+    from {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(-20deg);
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: rotate(-20deg);
+        transform: translate(10%, 0);
+    }
+}
