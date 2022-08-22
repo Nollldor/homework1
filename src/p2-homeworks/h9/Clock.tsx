@@ -10,23 +10,15 @@ function Clock() {
         // stop
         clearInterval(timerId)
     }
+
     const start = () => {
         stop()
-        let nextDate
-        let secondsCounter = 1
         const id: number = window.setInterval(() => {
-            if (date) {
-                nextDate = new Date(date.toISOString())
-                nextDate.setSeconds(nextDate.getSeconds() + secondsCounter)
-            } else {
-                nextDate = new Date()
-            }
-
-            setDate(nextDate)
-            secondsCounter++
+           setDate(new Date())
         }, 1000)
         setTimerId(id)
     }
+
 
     const onMouseEnter = () => {
         setShow(true)
