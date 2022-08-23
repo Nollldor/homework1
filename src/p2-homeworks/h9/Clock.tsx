@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import {brotliCompress} from "zlib";
 
 function Clock() {
     const [timerId, setTimerId] = useState<number>(0)
@@ -27,8 +28,8 @@ function Clock() {
         setShow(false)
     }
 
-    const stringTime = date?.toLocaleTimeString() // fix with date
-    const stringDate = date?.toLocaleDateString() // fix with date
+    const stringTime = date?.toLocaleTimeString() || ""// fix with date
+    const stringDate = date?.toLocaleDateString() || "" // fix with date
 
     return (
         <div>
