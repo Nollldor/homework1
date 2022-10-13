@@ -1,0 +1,13 @@
+.superRangeBlock {
+    display: flex;
+}
+
+
+.numDisplay {
+    display: inline-block;
+    width: 30px;
+}
+
+.multiRange {
+
+}
